@@ -1,0 +1,628 @@
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya
+$ git config --global http.proxy _http://proxyuserroxypwd@proxy.server.com:8080
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya
+$ git config --global http.proxy http://proxy.sony.rmt.com:10080
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya
+$ git clone https://github.com/avneeshkumar/git_tut.git
+Cloning into 'git_tut'...
+fatal: unable to access 'https://github.com/avneeshkumar/git_tut.git/': Couldn't                                                                                                                                                  resolve proxy 'proxy.sony.rmt.com'
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya
+$ git config --global http.proxy http://proxy.rmt.sony.co.jp:10080
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya
+$ git clone https://github.com/avneeshkumar/git_tut.git
+Cloning into 'git_tut'...
+warning: You appear to have cloned an empty repository.
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya
+$ git log
+fatal: Not a git repository (or any of the parent directories): .git
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya
+$ git log
+fatal: Not a git repository (or any of the parent directories): .git
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya
+$ git log
+fatal: Not a git repository (or any of the parent directories): .git
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya
+$ git pull
+fatal: Not a git repository (or any of the parent directories): .git
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya
+$ cd git_tut/
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git pull
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/avneeshkumar/git_tut
+ * [new branch]      master     -> origin/master
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git stash
+Saved working directory and index state WIP on master: 108d50f first changes
+HEAD is now at 108d50f first changes
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        READHER.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git add READHER.txt
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   READHER.txt
+
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git push
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/': adarsh07ronal@gmail.com
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/avneeshkumar/git_tut.git/'
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git push
+Fatal: TaskCanceledException encountered.
+Username for 'https://github.com':
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git push
+remote: Permission to avneeshkumar/git_tut.git denied to adarsh07ronal.
+fatal: unable to access 'https://github.com/avneeshkumar/git_tut.git/': The requ                                                                                                                                                 ested URL returned error: 403
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git push
+remote: Permission to avneeshkumar/git_tut.git denied to adarsh07ronal.
+fatal: unable to access 'https://github.com/avneeshkumar/git_tut.git/': The requ                                                                                                                                                 ested URL returned error: 403
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git push
+To https://github.com/avneeshkumar/git_tut.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/avneeshkumar/git_tut.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git pull
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/avneeshkumar/git_tut
+   108d50f..fbf3edf  master     -> origin/master
+Updating 108d50f..fbf3edf
+Fast-forward
+ README.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git push
+Everything up-to-date
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   READHER.txt
+
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git add READ
+READHER.txt  README.txt
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git add READ
+READHER.txt  README.txt
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git add READHER.txt
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git push
+To https://github.com/avneeshkumar/git_tut.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/avneeshkumar/git_tut.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git commit
+[master 9300663] ifyo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 READHER.txt
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git push
+To https://github.com/avneeshkumar/git_tut.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/avneeshkumar/git_tut.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git pull
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 5 (delta 0), reused 5 (delta 0), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+From https://github.com/avneeshkumar/git_tut
+   fbf3edf..d15c493  master     -> origin/master
+Merge made by the 'recursive' strategy.
+ README1.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README1.txt
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git pull
+Already up-to-date.
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git push
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 536 bytes | 0 bytes/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/avneeshkumar/git_tut.git
+   d15c493..e98dd9d  master -> master
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git pull
+Already up-to-date.
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git commit
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+        modified:   README.txt
+
+no changes added to commit
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git push
+To https://github.com/avneeshkumar/git_tut.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/avneeshkumar/git_tut.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git pull
+remote: Counting objects: 7, done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 7 (delta 0), reused 7 (delta 0), pack-reused 0
+Unpacking objects: 100% (7/7), done.
+From https://github.com/avneeshkumar/git_tut
+   e98dd9d..c08f24e  master     -> origin/master
+Updating e98dd9d..c08f24e
+error: Your local changes to the following files would be overwritten by merge:
+        README.txt
+Please commit your changes or stash them before you merge.
+Aborting
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git status
+On branch master
+Your branch is behind 'origin/master' by 3 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git commit
+On branch master
+Your branch is behind 'origin/master' by 3 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+Changes not staged for commit:
+        modified:   README.txt
+
+no changes added to commit
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git commit -am "jai hind"
+[master 3a1765a] jai hind
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git pull
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master|MERGING)
+$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 3 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master|MERGING)
+$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 3 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master|MERGING)
+$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 3 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master|MERGING)
+$ git add README.txt
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master|MERGING)
+$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 3 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+        modified:   README.txt
+
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master|MERGING)
+$ git commit
+[master edb3cd1] Merge branch 'master' of https://github.com/avneeshkumar/git_tu                                                                                                                                                 t
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git push
+Counting objects: 6, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 668 bytes | 0 bytes/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To https://github.com/avneeshkumar/git_tut.git
+   c08f24e..edb3cd1  master -> master
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git pull
+remote: Counting objects: 9, done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 9 (delta 0), reused 9 (delta 0), pack-reused 0
+Unpacking objects: 100% (9/9), done.
+From https://github.com/avneeshkumar/git_tut
+   edb3cd1..3313f9a  master     -> origin/master
+Updating edb3cd1..3313f9a
+Fast-forward
+ README.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git branch
+* master
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git branch feature/ADON
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git branch
+  feature/ADON
+* master
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git show
+commit 3313f9ad428845b58a3924c07a619410a113c8b4
+Merge: 0a1342e edb3cd1
+Author: Kadam <Akshat.Kadam@sony.com>
+Date:   Tue Nov 1 14:46:08 2016 +0900
+
+    resolved conflict again
+
+diff --cc README.txt
+index b996a4b,2ecebca..05aced8
+--- a/README.txt
++++ b/README.txt
+@@@ -1,2 -1,2 +1,4 @@@
+ +
+- HELLO ADARSH1
++ HELLO ADARSH1
++
+++>>>>>>>
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git branch
+  feature/ADON
+* master
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (master)
+$ git checkout feature/ADON
+Switched to branch 'feature/ADON'
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON)
+$ git push -u origin feature/ADON
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/avneeshkumar/git_tut.git
+ * [new branch]      feature/ADON -> feature/ADON
+Branch feature/ADON set up to track remote branch feature/ADON from origin.
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON)
+$ git commit -am "nan dede"
+[feature/ADON ff9ce7a] nan dede
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON)
+$ git push -u origin feature/ADON
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 330 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/avneeshkumar/git_tut.git
+   3313f9a..ff9ce7a  feature/ADON -> feature/ADON
+Branch feature/ADON set up to track remote branch feature/ADON from origin.
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON)
+$ git push
+Everything up-to-date
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON)
+$ git commit -am "nan dede"
+On branch feature/ADON
+Your branch is up-to-date with 'origin/feature/ADON'.
+nothing to commit, working tree clean
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON)
+$ git pull
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/avneeshkumar/git_tut
+ * [new branch]      feature/akshat  -> origin/feature/akshat
+ * [new branch]      feature/avneesh -> origin/feature/avneesh
+Already up-to-date.
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON)
+$ git merge origin/feature/akshat
+Merge made by the 'recursive' strategy.
+ README1.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON)
+$ git commit -am "induce conflict"
+[feature/ADON e878cf5] induce conflict
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON)
+$ git push
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 626 bytes | 0 bytes/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
+To https://github.com/avneeshkumar/git_tut.git
+   ff9ce7a..e878cf5  feature/ADON -> feature/ADON
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON)
+$ git pull
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 5 (delta 1), reused 5 (delta 1), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+From https://github.com/avneeshkumar/git_tut
+   7ffe5f0..143ca38  feature/akshat -> origin/feature/akshat
+Already up-to-date.
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON)
+$ git checkout
+M       READHER.txt
+Your branch is up-to-date with 'origin/feature/ADON'.
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON)
+$ git pull
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/avneeshkumar/git_tut
+   143ca38..97e225e  feature/akshat -> origin/feature/akshat
+Already up-to-date.
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON)
+$ git pull
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/avneeshkumar/git_tut
+   97e225e..49f9e68  feature/akshat -> origin/feature/akshat
+Already up-to-date.
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON)
+$ git merge origin/
+origin/feature/ADON      origin/feature/akshat    origin/feature/avneesh   origin/master
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON)
+$ git merge origin/
+origin/feature/ADON      origin/feature/akshat    origin/feature/avneesh   origin/master
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON)
+$ git merge origin/feature/akshat
+Updating e878cf5..49f9e68
+error: Your local changes to the following files would be overwritten by merge:
+        READHER.txt
+Please commit your changes or stash them before you merge.
+Aborting
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON)
+$ git commmit
+git: 'commmit' is not a git command. See 'git --help'.
+
+Did you mean this?
+        commit
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON)
+$ git commmit -am "adarsh"
+git: 'commmit' is not a git command. See 'git --help'.
+
+Did you mean this?
+        commit
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON)
+$ git commit -am "adarsh"
+[feature/ADON 9613fe2] adarsh
+ 1 file changed, 1 insertion(+)
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON)
+$ git merge origin/feature/akshat
+Auto-merging READHER.txt
+CONFLICT (content): Merge conflict in READHER.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON|MERGING)
+$ git status
+On branch feature/ADON
+Your branch is ahead of 'origin/feature/ADON' by 1 commit.
+  (use "git push" to publish your local commits)
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+
+        modified:   README.txt
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   READHER.txt
+
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON|MERGING)
+$ git add READHER.txt
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON|MERGING)
+$ git commit -am "ss"
+[feature/ADON a71435e] ss
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON)
+$ git stash list
+stash@{0}: WIP on master: 108d50f first changes
+
+0000101375@JPC00153929 MINGW64 /d/LiveStream/ya/git_tut (feature/ADON)
+$ git commit -am "adarsh"
